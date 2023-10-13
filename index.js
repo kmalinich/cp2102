@@ -59,7 +59,9 @@ class cp2102 extends EventEmitter {
 		];
 
 
-		this.device.open(false); // don't auto-configure
+		this.device.open();
+
+
 		const self = this;
 
 
