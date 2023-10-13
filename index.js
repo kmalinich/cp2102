@@ -147,7 +147,7 @@ class cp2102 extends EventEmitter {
 	}
 
 	controlTransferOut(transfer, data) {
-		this.controlTransfer('host-to-device', transfer, data !== null ? data : Buffer.alloc(0));
+		this.controlTransfer('host-to-device', transfer, data !== undefined ? data : Buffer.alloc(0));
 	}
 
 
